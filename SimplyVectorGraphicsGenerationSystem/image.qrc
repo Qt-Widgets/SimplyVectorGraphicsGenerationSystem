@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/new">
+        <file>image_png/clear.png</file>
+        <file>image_png/ColorManageDialog.png</file>
+        <file>image_png/vector.png</file>
+        <file>image_png/save.png</file>
+        <file>image_png/help.png</file>
+        <file>image_png/open.png</file>
+        <file>image_png/control_mode.png</file>
+        <file>image_png/PreciseDrawDialog.png</file>
+        <file>image_png/bezier_curve.png</file>
+        <file>image_png/circle.png</file>
+        <file>image_png/ellipse.png</file>
+        <file>image_png/line.png</file>
+        <file>image_png/rectangle.png</file>
+        <file>image_png/rectangle_s.png</file>
+        <file>image_png/triangle.png</file>
+    </qresource>
+</RCC>

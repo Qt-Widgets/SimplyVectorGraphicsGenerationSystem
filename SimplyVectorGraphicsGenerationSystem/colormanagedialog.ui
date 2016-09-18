@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ColorManageDialog</class>
+ <widget class="QDialog" name="ColorManageDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>280</width>
+    <height>290</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>280</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>填充颜色与画笔管理</string>
+  </property>
+  <widget class="QGroupBox" name="colorBrushGroupBox">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>9</y>
+     <width>168</width>
+     <height>113</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>封闭图形填充颜色</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="redBrushLabel">
+        <property name="font">
+         <font>
+          <family>黑体</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>R</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="redBrushSpinBox"/>
+      </item>
+      <item>
+       <widget class="QSlider" name="redBrushHorizontalSlider">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="greenBrushLabel">
+        <property name="font">
+         <font>
+          <family>黑体</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>G</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="greenBrushSpinBox"/>
+      </item>
+      <item>
+       <widget class="QSlider" name="greenBrushHorizontalSlider">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="blueBrushLabel">
+        <property name="font">
+         <font>
+          <family>黑体</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>B</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="blueBrushSpinBox"/>
+      </item>
+      <item>
+       <widget class="QSlider" name="blueBrushHorizontalSlider">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="colorGroupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>170</width>
+     <height>144</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>画笔粗度与颜色</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>52</y>
+      <width>148</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QLabel" name="greenPenLabel">
+       <property name="font">
+        <font>
+         <family>黑体</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>G</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="greenPenSpinBox"/>
+     </item>
+     <item>
+      <widget class="QSlider" name="greenPenHorizontalSlider">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>81</y>
+      <width>148</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <widget class="QLabel" name="bluePenLabel">
+       <property name="font">
+        <font>
+         <family>黑体</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>B</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="bluePenSpinBox"/>
+     </item>
+     <item>
+      <widget class="QSlider" name="bluePenHorizontalSlider">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>110</y>
+      <width>148</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <widget class="QLabel" name="thickPenLabel">
+       <property name="font">
+        <font>
+         <family>黑体</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>T</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="thickPenSpinBox"/>
+     </item>
+     <item>
+      <widget class="QSlider" name="thickPenHorizontalSlider">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>23</y>
+      <width>148</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="redPenLabel">
+       <property name="font">
+        <font>
+         <family>黑体</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>R</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="redPenSpinBox"/>
+     </item>
+     <item>
+      <widget class="QSlider" name="redPenHorizontalSlider">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>191</x>
+     <y>31</y>
+     <width>82</width>
+     <height>83</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QPushButton" name="okPushButton">
+      <property name="text">
+       <string>确定</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="CancelPushButton">
+      <property name="text">
+       <string>取消</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="acquiescencePushButton">
+      <property name="text">
+       <string>恢复默认</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>redBrushSpinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>redBrushHorizontalSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>54</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>123</x>
+     <y>42</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>redBrushHorizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>redBrushSpinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>123</x>
+     <y>42</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>54</x>
+     <y>41</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>greenBrushSpinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>greenBrushHorizontalSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>54</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>123</x>
+     <y>71</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>greenBrushHorizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>greenBrushSpinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>123</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>54</x>
+     <y>70</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>blueBrushSpinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>blueBrushHorizontalSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>54</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>123</x>
+     <y>100</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>blueBrushHorizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>blueBrushSpinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>123</x>
+     <y>100</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>54</x>
+     <y>99</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>redPenSpinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>redPenHorizontalSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>55</x>
+     <y>167</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>125</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>redPenHorizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>redPenSpinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>125</x>
+     <y>164</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>56</x>
+     <y>163</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>greenPenSpinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>greenPenHorizontalSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>56</x>
+     <y>192</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>125</x>
+     <y>193</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>greenPenHorizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>greenPenSpinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>125</x>
+     <y>193</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>56</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bluePenSpinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>bluePenHorizontalSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>56</x>
+     <y>221</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>125</x>
+     <y>222</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bluePenHorizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>bluePenSpinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>125</x>
+     <y>222</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>56</x>
+     <y>221</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>thickPenSpinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>thickPenHorizontalSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>56</x>
+     <y>250</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>125</x>
+     <y>251</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>thickPenHorizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>thickPenSpinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>125</x>
+     <y>251</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>56</x>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CancelPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ColorManageDialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>231</x>
+     <y>72</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>138</x>
+     <y>146</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>okPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ColorManageDialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>231</x>
+     <y>43</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>138</x>
+     <y>146</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
